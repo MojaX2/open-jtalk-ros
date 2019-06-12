@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="jtalk" name="open_jtalk" type="openjtalk_node.py"/>
+    <!-- laod dynamic reconfigure -->
+    <node name="dynamic_reconfigure_jtalk" pkg="dynamic_reconfigure" type="dynparam" 
+        args="load /open_jtalk $(find jtalk)/params/mei.yaml"/>
+
+</launch>
+

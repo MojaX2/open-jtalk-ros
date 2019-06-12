@@ -1,0 +1,29 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  additional_half_tone: -4.0
+  all_pass_constant: 0.58
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      additional_half_tone: -4.0
+      all_pass_constant: 0.58
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      postfiltering_coefficient: 0.1
+      speech_speed_rate: 1.2
+      state: true
+      type: ''
+      voiced_unvoiced_threshold: 0.5
+      weight_of_GV_for_log_F0: 1.1
+      weight_of_GV_for_spectrum: 1.0
+    state: []
+  postfiltering_coefficient: 0.1
+  speech_speed_rate: 1.2
+  voiced_unvoiced_threshold: 0.5
+  weight_of_GV_for_log_F0: 1.1
+  weight_of_GV_for_spectrum: 1.0
+state: []
