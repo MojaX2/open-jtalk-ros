@@ -1,13 +1,13 @@
 # open-jtalk-ros
 ros package for open-jtalk with docker
 
-# Start open-jtale-ros container
+# Start open-jtalk-ros container
 ```bash:bash
 $ ./build_and_run.sh
 ```
 
 # subscrib
-* /jtalk/say: std_msg.msg String
+* /jtalk/say: std_msg.msg String  
 speech text
 
 # rosservice
