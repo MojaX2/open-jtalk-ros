@@ -1,9 +1,5 @@
 #!/bin/bash
-set -e
-set -x
 IMAGE_NAME="moja2/open-jtalk-ros"
-
-docker build -t ${IMAGE_NAME}:latest .
 
 # set pulseaudio for using sound device
 rm -rf /tmp/pulseaudio.*
@@ -18,4 +14,5 @@ docker run --rm -it \
     --volume /tmp/pulseaudio.socket:/tmp/pulseaudio.socket \
     --volume /tmp/pulseaudio.client.conf:/etc/pulse/client.conf \
     -v /etc/localtime:/etc/localtime:ro \
-    ${IMAGE_NAME}:latest bash -c "source /home/developer/catkin_ws/devel/setup.bash && roslaunch jtalk jtalk.launch"
+    ${IMAGE_NAME}:latest \
+    bash -c "source /home/developer/catkin_ws/devel/setup.bash && roslaunch jtalk jtalk.launch"
